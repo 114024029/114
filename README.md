@@ -5,9 +5,10 @@
 <title>張凱琪 個人履歷</title>
 
 <style>
+
 body{
     font-family: "Microsoft JhengHei", sans-serif;
-    background:#f5f5f5;
+    background:#e9e2c7; /* 莫蘭迪淡黃色 */
     margin:0;
     padding:0;
 }
@@ -21,6 +22,21 @@ body{
     box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.profile-img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #d6cfae;
+}
+
 h1{
     text-align:center;
     color:#333;
@@ -31,9 +47,9 @@ h1{
 }
 
 .section h2{
-    border-bottom:2px solid #4CAF50;
+    border-bottom:2px solid #9a8f6a;
     padding-bottom:5px;
-    color:#4CAF50;
+    color:#7c7356;
 }
 
 .info p{
@@ -44,14 +60,14 @@ button{
     margin-top:10px;
     padding:8px 15px;
     border:none;
-    background:#4CAF50;
+    background:#9a8f6a;
     color:white;
     border-radius:5px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#45a049;
+    background:#7c7356;
 }
 
 .hidden{
@@ -64,6 +80,7 @@ button:hover{
     color:gray;
     font-size:14px;
 }
+
 </style>
 
 </head>
@@ -72,11 +89,13 @@ button:hover{
 
 <div class="container">
 
+<div class="header">
 <h1>個人履歷</h1>
+<img src="89863.jpg" class="profile-img">
+</div>
 
 <div class="section info">
 <h2>基本資料</h2>
-<p><strong>姓名：</strong> 張凱琪</p>
 <p><strong>學號：</strong> AU114024029</p>
 <p><strong>電話：</strong> 0905732605</p>
 <p><strong>學校：</strong> 亞洲大學</p>
@@ -88,8 +107,8 @@ button:hover{
 <h2>自我介紹</h2>
 
 <p id="intro" class="hidden">
-我是亞洲大學資訊傳播學系一年級學生，對於數位媒體、設計與科技應用具有高度興趣。
-目前正在學習網頁設計、數位內容製作與媒體傳播相關技能，希望未來能夠結合科技與創意，
+我是亞洲大學資訊傳播學系一年級學生，對數位媒體與網頁設計具有濃厚興趣。
+目前正在學習 HTML、CSS、JavaScript 等網頁技術，希望未來能結合創意設計與科技，
 創作具有影響力的數位內容。
 </p>
 
@@ -110,8 +129,8 @@ button:hover{
 <div class="section">
 <h2>未來目標</h2>
 <p>
-希望在資訊傳播領域持續學習，提升網頁設計、數位媒體製作與創意內容能力，
-未來能成為具備設計與科技整合能力的數位內容創作者。
+希望在資訊傳播領域持續學習，提升網頁設計與數位媒體能力，
+未來能成為具備創意與技術整合能力的數位內容創作者。
 </p>
 </div>
 
@@ -122,6 +141,7 @@ button:hover{
 </div>
 
 <script>
+
 function toggleIntro(){
     var intro = document.getElementById("intro");
 
@@ -131,6 +151,7 @@ function toggleIntro(){
         intro.classList.add("hidden");
     }
 }
+
 </script>
 
 </body>
