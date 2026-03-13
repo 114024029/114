@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>張凱琪 個人履歷</title>
 
+<style>
+body{
+    font-family: "Microsoft JhengHei", sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    border-bottom:2px solid #4CAF50;
+    padding-bottom:5px;
+    color:#4CAF50;
+}
+
+.info p{
+    margin:6px 0;
+}
+
+button{
+    margin-top:10px;
+    padding:8px 15px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+.hidden{
+    display:none;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:gray;
+    font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>個人履歷</h1>
+
+<div class="section info">
+<h2>基本資料</h2>
+<p><strong>姓名：</strong> 張凱琪</p>
+<p><strong>學號：</strong> AU114024029</p>
+<p><strong>電話：</strong> 0905732605</p>
+<p><strong>學校：</strong> 亞洲大學</p>
+<p><strong>系所：</strong> 資訊傳播學系</p>
+<p><strong>年級：</strong> 一年級</p>
+</div>
+
+<div class="section">
+<h2>自我介紹</h2>
+
+<p id="intro" class="hidden">
+我是亞洲大學資訊傳播學系一年級學生，對於數位媒體、設計與科技應用具有高度興趣。
+目前正在學習網頁設計、數位內容製作與媒體傳播相關技能，希望未來能夠結合科技與創意，
+創作具有影響力的數位內容。
+</p>
+
+<button onclick="toggleIntro()">顯示 / 隱藏 自我介紹</button>
+
+</div>
+
+<div class="section">
+<h2>技能</h2>
+<ul>
+<li>HTML / CSS 基礎網頁設計</li>
+<li>JavaScript 基礎互動</li>
+<li>數位內容製作</li>
+<li>媒體與資訊傳播概念</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>未來目標</h2>
+<p>
+希望在資訊傳播領域持續學習，提升網頁設計、數位媒體製作與創意內容能力，
+未來能成為具備設計與科技整合能力的數位內容創作者。
+</p>
+</div>
+
+<div class="footer">
+<p>© 2026 張凱琪 Resume</p>
+</div>
+
+</div>
+
+<script>
+function toggleIntro(){
+    var intro = document.getElementById("intro");
+
+    if(intro.classList.contains("hidden")){
+        intro.classList.remove("hidden");
+    }else{
+        intro.classList.add("hidden");
+    }
+}
+</script>
+
+</body>
+</html>
